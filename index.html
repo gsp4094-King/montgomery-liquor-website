@@ -3,47 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montgomery Liquor - Your One-Stop Liquor Shop</title>
+    <title>Montgomery Liquor - Premium Spirit Selection</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Montgomery Liquor</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-bottle"></i> Montgomery Liquor
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Your One-Stop Liquor Shop</h2>
-            <p>Discover a wide selection of fine wines, premium spirits, and craft beers.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Montgomery Liquor has been serving the community with high-quality beverages since 1995.</p>
-        </section>
-        <section id="products">
-            <h2>Our Products</h2>
-            <ul>
-                <li>Wines</li>
-                <li>Beers</li>
-                <li>Spirits</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: contact@montgomeryliquor.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Montgomery Liquor. All rights reserved.</p>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Montgomery Liquor</h1>
+            <p>Premium Spirits & Fine Beverages</p>
+            <p class="tagline">Est. 2010 | Your Trusted Source for Quality</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Collections</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-whiskey-glass"></i></div>
+                <h3>Whiskey</h3>
+                <p>Bourbon, Scotch, Irish & Rye</p>
+                <span class="price">From $49.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-wine-bottle"></i></div>
+                <h3>Vodka</h3>
+                <p>Premium & Flavored Options</p>
+                <span class="price">From $39.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-wine-bottle"></i></div>
+                <h3>Rum</h3>
+                <p>Light, Dark & Spiced Varieties</p>
+                <span class="price">From $44.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-leaf"></i></div>
+                <h3>Gin</h3>
+                <p>London Dry & Craft Gins</p>
+                <span class="price">From $45.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-pepper-hot"></i></div>
+                <h3>Tequila</h3>
+                <p>100% Agave Selections</p>
+                <span class="price">From $42.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-wine-glass-alt"></i></div>
+                <h3>Wine</h3>
+                <p>Red, White & Sparkling</p>
+                <span class="price">From $19.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-bottle-water"></i></div>
+                <h3>Brandy</h3>
+                <p>Cognac & Armagnac</p>
+                <span class="price">From $59.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-cocktail"></i></div>
+                <h3>Liqueurs</h3>
+                <p>Sweet & Flavored Spirits</p>
+                <span class="price">From $34.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-beer"></i></div>
+                <h3>Beer</h3>
+                <p>Craft & Premium Brands</p>
+                <span class="price">From $12.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-fire"></i></div>
+                <h3>Mezcal</h3>
+                <p>Artisanal & Small-Batch</p>
+                <span class="price">From $55.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-champagne-glasses"></i></div>
+                <h3>Champagne</h3>
+                <p>Sparkling & Prosecco</p>
+                <span class="price">From $29.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"><i class="fas fa-flask-vial"></i></div>
+                <h3>Absinthe</h3>
+                <p>Premium & Authentic</p>
+                <span class="price">From $69.99</span>
+                <button class="explore-btn">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured" class="featured">
+        <h2>Featured Products</h2>
+        <div class="featured-grid">
+            <div class="featured-item">
+                <div class="featured-badge">Best Seller</div>
+                <div class="featured-icon"><i class="fas fa-whiskey-glass" style="font-size: 80px; color: #d4af37;"></i></div>
+                <h3>Macallan 18 Year Old</h3>
+                <p class="origin">Scottish Highlands</p>
+                <p>Award-winning single malt with oak and vanilla notes</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (247 reviews)</div>
+                <span class="featured-price">$189.99</span>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="featured-item">
+                <div class="featured-badge">Award Winning</div>
+                <div class="featured-icon"><i class="fas fa-wine-bottle" style="font-size: 80px; color: #8B4513;"></i></div>
+                <h3>Bacardi Superior</h3>
+                <p class="origin">Puerto Rico</p>
+                <p>World's most awarded rum - light and crisp</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (512 reviews)</div>
+                <span class="featured-price">$24.99</span>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="featured-item">
+                <div class="featured-badge">Premium</div>
+                <div class="featured-icon"><i class="fas fa-wine-bottle" style="font-size: 80px; color: #87CEEB;"></i></div>
+                <h3>Grey Goose Vodka</h3>
+                <p class="origin">Cognac, France</p>
+                <p>Iconic vodka crafted from French wheat</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (389 reviews)</div>
+                <span class="featured-price">$54.99</span>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="featured-item">
+                <div class="featured-badge">Luxury</div>
+                <div class="featured-icon"><i class="fas fa-champagne-glasses" style="font-size: 80px; color: #FFD700;"></i></div>
+                <h3>Dom Pérignon 2012</h3>
+                <p class="origin">Champagne, France</p>
+                <p>Ultimate champagne with complexity and elegance</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (156 reviews)</div>
+                <span class="featured-price">$234.99</span>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Montgomery Liquor has the best selection in town!"</p>
+                <strong>- James Mitchell</strong>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Great service and fast delivery. Highly recommended!"</p>
+                <strong>- Sarah Anderson</strong>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Best prices and authentic products guaranteed."</p>
+                <strong>- Robert Chen</strong>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Found rare bottles I couldn't find anywhere else!"</p>
+                <strong>- Emma Thompson</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Montgomery Liquor</h2>
+        <div class="about-content">
+            <p>For over 15 years, Montgomery Liquor has been your trusted destination for premium spirits and fine beverages. We pride ourselves on quality, selection, and exceptional customer service.</p>
+            <div class="about-features">
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Carefully curated spirits from top distilleries worldwide</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Free shipping on orders over $100</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Shopping</h3>
+                    <p>100% safe and encrypted transactions</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>Expert Support</h3>
+                    <p>24/7 customer service available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Montgomery Liquor</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>1-800-MONTGOMERY</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@montgomeryliquor.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>456 Premium Spirits Ave, Beverage City</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Hours</h3>
+                    <p>Mon-Sun: 9 AM - 11 PM</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Subscribe for Exclusive Deals</h2>
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Montgomery Liquor</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Age Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2026 Montgomery Liquor. Must be 21+. Drink Responsibly.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
